@@ -71,6 +71,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'MyKart.wsgi.application'
 
+AUTH_USER_MODEL = 'accounts.Account'
+
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
