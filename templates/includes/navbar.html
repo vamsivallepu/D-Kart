@@ -49,7 +49,7 @@
               <i class="fa fa-bars"></i> All category
             </button>
             <div class="dropdown-menu">
-              <a class="dropdown-item"  href={% url 'store' %}>All Products</a>
+              <a class="dropdown-item" href={% url 'store' %}>All Products</a>
               {% for category in links %}
               <a class="dropdown-item" href={{category.get_url}}> {{ category.category_name }}
               </a>
@@ -85,7 +85,7 @@
                 <a href="./register.html"> Register</a>
               </div>
             </div>
-            <a href="./cart.html" class="widget-header pl-3 ml-3">
+            <a href="{% url 'cart' %}" class="widget-header pl-3 ml-3">
               <div class="icon icon-sm rounded-circle border">
                 <i class="fa fa-shopping-cart"></i>
               </div>
